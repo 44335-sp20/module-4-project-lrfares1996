@@ -48,14 +48,29 @@
 			//Step 5: Set an id on each option in the select tag. Name the id's state1, state2, and state3.
 			//Change the states that are used in the dropdown box to "Missouri", "Iowa", "Nebraska". 
 			//Change the states value property to the appropriate state abbreviation. 
-
-			
-			
-			
-			
-			
-			
-			
+            var states = document.getElementsByTagName("option");
+        
+            for (var i = 0; i < states.length; i++)
+               {
+                   if (i == 0)
+                       {
+                            states[0].id = "state1";
+                            document.getElementById("state1").innerHTML = "Missouri";
+                            document.getElementById("state1").value = "MO";
+                       }
+                   if (i == 1)
+                       {
+                            states[1].id = "state2";
+                            document.getElementById("state2").innerHTML = "Iowa";
+                            document.getElementById("state2").value = "IA";
+                       }
+                   if (i == 2)
+                       {
+                            states[2].id = "state3";
+                            document.getElementById("state3").innerHTML = "Nebraska";
+                            document.getElementById("state3").value = "NE";
+                       }
+               }
 	
 			//Comment out the code for Step 5. On the Contact.html page, write the code to change all of the states with the class "state"
 			//to the word "Hello". You must use a for loop in your solution.
