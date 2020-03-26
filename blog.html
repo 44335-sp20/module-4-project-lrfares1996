@@ -41,14 +41,12 @@
             document.getElementById("blogline").innerHTML = "March Madness Wrap now available!";
 			
 			//Step 4: Change the h3 tags to be italic. Use must use a for loop in your solution.
+			var headers = document.querySelectorAll("h3");
 			
-			
-			
-			
-			
-			
-			
-			
+			for (var i = 0; i < headers.length; i++)
+            {
+                headers[i].style.fontStyle = "italic";
+            }
 
    </script>
    <footer>Copyright &copy; 2015
