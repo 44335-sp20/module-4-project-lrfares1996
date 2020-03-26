@@ -32,24 +32,17 @@
    </main> 
    <script>
 			//Step 1: Select all of the images on the page
-
+            var images = document.querySelectorAll("img");
 			
-			
-			
-			
-
 			//Step 2: Change the second and fourth pictures on the page to the "lighthouseisland.jpg" picture in the 
 			//images folder
-
-			
-			
-			
-			
-			
-			
-			
-   
-   
+            for (var i = 0; i < images.length; i++)
+            {
+                if (i == 1 || i == 3)
+                    {
+                        images[i].src = "images/lighthouseisland.jpg";
+                    }
+            }
    </script>
    <footer>Copyright &copy; 2015
    </footer>
